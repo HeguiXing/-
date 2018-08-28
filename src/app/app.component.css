@@ -1,0 +1,366 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.box {
+    position: absolute;
+    width: 100%;
+    min-width: 375px;
+    background-image: url('../assets/image/all-backpage.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+.margin-box {
+    margin-top: 64px;
+}
+.wrapper-title {
+    position: relative;
+}
+.wrapper-title div {
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+    font-size: 21px;
+    line-height: 24px;
+    text-shadow: 1px 1px 1px rgb(30, 136, 113);
+}
+.wrapper-title span {
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(rgb(116, 255, 201), rgb(47, 163, 225));
+} 
+.wrapper {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.header-title {
+    width: 211px;
+    height: 25px;
+    margin-top: 28.5px;
+}
+.header-time {
+    width: 120px;
+    margin-top: 33px;
+}
+.header-slogan {
+    width: 65%;
+    margin-top: -10px;
+}
+.header-about {
+    margin-top: 376px;
+    margin-bottom: 30px;
+}
+.about-content {
+    background-image: url('../assets/image/卡车图片.jpg');
+    background-size: 100% 100%;
+}
+.about-content span {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 19px;
+}
+.about-location {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px 15px;
+    font-weight: lighter;
+}
+.about-map {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 15px;
+}
+.about-map-content {
+    box-sizing: border-box;
+    padding: 20px 15px 0 15px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: lighter;
+    font-weight:normal;
+}
+.header-introduction {
+    margin-top: 40px;
+}
+.introduction-video-one {
+    position: relative;
+    width: 100%;
+}
+.video-wrapper,
+.video-control {
+    position: absolute;
+    top: 38px;
+    left: 18px;
+    width: 339px;
+    height: 200px;
+}
+.video-control>img,
+.video-control>video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.video-wrapper>img {
+    margin-top: 80px;
+    margin-left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+}
+.video-wrapper>div {
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    line-height: 22.5px;
+    padding: 10px 18px;
+}
+.introduction-video-one>img {
+    position: absolute;
+    box-sizing: border-box;
+    padding-left: 10px;
+    top: -37px;
+    width: 100%;
+}
+.introduction-video-two {
+    width: 100%;
+    position: relative;
+    margin-top: 235px;
+}
+.introduction-video-two .video-wrapper,
+.introduction-video-two .video-control {
+    margin-top: 8px;
+}
+.introduction-video-two>img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.hidden {
+    display: none;
+}
+.header-jobs {
+    margin-top: 290px;
+}
+.content-bottom{
+    width: 100%;
+    height: auto;
+}
+.content-bottom .content-recruitment{
+    width: 100%;
+}
+.content-bottom .content-recruitment .recruitment-title{
+    position: relative;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+}
+.content-bottom .content-recruitment .recruitment-title .title{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 94px;
+    height: 24px;
+    font-size: 21px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: 'PingFang-SC-Heavy';
+    text-shadow: 1px 1px 1px rgb(30, 136, 113);
+}
+.content-bottom .content-recruitment .recruitment-title .experience-title{
+    width: 247px;
+}
+.content-bottom .content-recruitment .recruitment-title .title-background{
+    display: inline-block;
+    margin-top: 16px;
+    width: 94.5px;
+    height: 8px;
+    background: -webkit-linear-gradient(rgb(116,255,201), rgb(47,163,225));
+    background: -o-linear-gradient(rgb(116,255,201), rgb(47,163,225));
+    background: -moz-linear-gradient(rgb(116,255,201), rgb(47,163,225));
+    background: linear-gradient(rgb(116,255,201), rgb(47,163,225));
+}
+.content-bottom .content-recruitment .recruitment-title .experience-background{
+    margin-top: 14px;
+    width: 247px;
+}
+.jobs {
+    width: 100%;
+    font-size: 0;
+}
+.jobs .jobs-product .jobs-background{
+    display: inline-block;
+    margin-left: 15px;
+    width: 3.5px;
+    height: 51.5px;
+    background-color: rgb(110, 255, 224)
+}
+.jobs .jobs-product .jobs-java, .jobs .jobs-product .jobs-android{
+    height: 63px;
+}
+.jobs .jobs-product .jobs-research, .jobs .jobs-product .jobs-web,  .jobs .jobs-product .jobs-ios{
+    height: 64px;
+}
+.jobs .jobs-product .jobs-manager{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.jobs .jobs-product .jobs-station{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 15px;
+    color: #ffffff;
+    font-family: 'PingFang-SC-Heavy';
+}
+.jobs .jobs-product .jobs-type{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    font-family: 'PingFang-SC-Heavy';
+    margin-top: 5px;
+}
+.jobs .jobs-product .jobs-java-software{
+    margin-top: 3.5px;
+}
+.jobs::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.jobs .jobs-one{
+    margin-top: 112px;
+}
+.jobs .jobs-two{
+    float: right;
+    margin-top: 27px;
+    margin-right: 15px;
+}
+.jobs .jobs-two .jobs-manager{
+    text-align: right;
+    margin-left: 0px;
+}
+.jobs .jobs-two .jobs-background{
+    margin-left: 5px;
+}
+.jobs .jobs-three{
+    margin-top: 84px;
+}
+.jobs .jobs-four{
+    float: right;
+    margin-top: -26px;
+    margin-right: 15px;
+}
+.jobs .jobs-four .jobs-manager{
+    text-align: right;
+    margin-left: 0px;
+}
+.jobs .jobs-four .jobs-background{
+    margin-left: 5px;
+}
+.jobs .jobs-five{
+    margin-top: 63px;
+}
+.jobs .jobs-five .jobs-background{
+    height: 63px;
+}
+.jobs .jobs-six{
+    float: right;
+    margin-top: -5px;
+    margin-right: 42%;
+}
+.jobs .jobs-six .jobs-manager{
+    text-align: right;
+    margin-left: 0px;
+}
+.jobs .jobs-six .jobs-background{
+    margin-left: 5px;
+}
+.delivery{
+    margin-top: 50.5px;
+}
+.send-resume{
+    margin-top: 77px;
+    text-align: center;
+    width: 100%;
+}
+.send-resume .send-email{
+    position: relative;
+    display: inline-block;    
+    text-align: left;
+    width: 215px;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(187, 208, 230);
+    font-family: 'PingFang-SC-Heavy';
+}
+.send-resume .send-email input{
+    width: 210px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'PingFang-SC-Heavy';
+    border: 0;
+    padding: 0;
+    color: rgb(255, 100, 119);    
+}
+.send-resume .send-email .span-format{
+    color: rgb(255, 98, 117);
+}
+.send-resume .send-email #img{
+    position: absolute;
+    top: 31px;
+    margin-left: 6px;
+    width: 13px;
+    height: 13px;
+}
+.send-resume .take-care{
+    display: inline-block;
+    width: 215px;
+    text-align: left;
+    margin-top: 16px;
+    font-family: 'PingFang-SC-Heavy';
+    font-size: 10px;
+    line-height: 15px;
+    color: rgb(187, 208, 230);
+}
+.experience{
+    margin-top: 131px;
+}
+.treatment{
+    width: 100%;
+    font-family: 'PingFang-SC-Heavy';
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+}
+.treatment p{
+    margin: 0;
+    padding: 0;
+}
+.treatment p:nth-child(1) ~ p{
+    margin-top: 5px;
+}
+.imge{
+    margin-top: 31.5px;
+    width: 100%;
+    height: 396px;
+    margin-bottom: 76px;
+}
+.imge img{
+    width: 100%;
+    height: 100%;
+}
