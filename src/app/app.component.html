@@ -1,147 +1,142 @@
-<div class="box">
-  <div class="wrapper">
-    <div class="margin-box"></div>
-    <img src="../assets/image/truckerpath_horizontal_white.png" alt="" class="header-title">
-    <img src="../assets/image/2019.png" alt="" class="header-time">
-    <img src="../assets/image/校园招聘.png" alt="" class="header-slogan">
-    <img src="../assets/image/正式启动.png" alt="" class="header-slogan">
-    <div class="wrapper-title header-about">
-      <div>关于TRUCKER PATH</div>
-      <span></span>
+<div class="wrapper">
+  <img src="../assets/image/truckerpath_horizontal_white.png" alt="" class="header-title">
+  <img src="../assets/image/2019.png" alt="" class="header-time">
+  <img src="../assets/image/校园招聘.png" alt="" class="header-slogan">
+  <img src="../assets/image/正式启动.png" alt="" class="header-slogan">
+  <div class="wrapper-title header-about">
+    <div>关于TRUCKER PATH</div>
+    <span></span>
+  </div>
+  <div class="about-content">
+    <span>
+      Trucker Path是全北美最大的卡车生态社区，我们信奉科技，用最先进的互联网模式和强大的人工智能技术不断改变货运生态链。我们服务于上百万的卡车司机和货运公司，我们的应用已经成为全北美卡车行业最受欢迎的应用。
+    </span>
+  </div>
+  <div class="about-location">
+    公司总部位于美国凤凰城，办公地点遍布世界各地，包括但不限于：旧金山、纽约、马尼拉、北京。北京团队主要负责全部的产品研发、用户增长、广告算法优化和投放，大数据分析等核心项目。
+  </div>
+  <img src="../assets/image/世界地图.png" alt="" class="about-map">
+  <div class="about-map-content">
+    我们的核心团队成员来自于北大、清华、康奈尔、港大等国内外高校，还有来自微软、IBM、亚马逊等国际知名科技公司的大牛。
+  </div>
+  <div class="about-map-content">
+    想要加入Trucker Path？我们提供良好的平台、有挑战的项目、诱人的薪资福利待遇，你将与行业大牛切磋交流，更有机会到世界各地的分公司工作和体验。我们还在不断开拓智能硬件、无人驾驶、智能物流等新的业务。优秀的员工将会有transfer到美国的机会！
+  </div>
+  <div class="wrapper-title header-introduction">
+    <div>项目介绍</div>
+    <span></span>
+  </div>
+  <div class="video-introction">
+    <div class="video-all-box" (click)="pause(1)">
+      <video src=" ../assets/video/Trucker Path _ Trucker App - truck parking, truck stops, weigh stations, diesel fuel.mp4" class="video"></video>
+      <div class="video-all-control" [hidden]="controlOne">
+        <img src="../assets/image/视频播放按钮.png" alt="" (click)="play(1, $event)">
+        <div>Trucker Path已经成为北美最受欢迎的卡车司机应用，是北美最大的卡车社区。</div>
+      </div>
     </div>
-    <div class="about-content">
-      <span>
-        Trucker Path是全北美最大的卡车生态社区，我们信奉科技，用最先进的互联网模式和强大的人工智能技术不断改变货运生态链。我们服务于上百万的卡车司机和货运公司，我们的应用已经成为全北美卡车行业最受欢迎的应用。
-      </span>
+    <img src="../assets/image/1.png" alt="" class="background-img-one">
+  </div>
+  <div class="video-introction">
+    <div class="video-all-box" (click)="pause(2)">
+      <video src="../assets/video/Free Load Board _ Find Truck Freight With Truckloads.mp4" class="video"></video>
+      <div class="video-all-control" [hidden]="controlTwo">
+        <img src="../assets/image/视频播放按钮.png" alt="" (click)="play(2, $event)">
+        <div>Truckloads是北美使用量最大的免费loadboard。</div>
+      </div>
     </div>
-    <div class="about-location">
-      公司总部位于美国凤凰城，办公地点遍布世界各地，包括但不限于：旧金山、纽约、马尼拉、北京。北京团队主要负责全部的产品研发、用户增长、广告算法优化和投放，大数据分析等核心项目。
-    </div>
-    <img src="../assets/image/世界地图.png" alt="" class="about-map">
-    <div class="about-map-content">
-      我们的核心团队成员来自于北大、清华、康奈尔、港大等国内外高校，还有来自微软、IBM、亚马逊等国际知名科技公司的大牛。
-    </div>
-    <div class="about-map-content">
-      想要加入Trucker Path？我们提供良好的平台、有挑战的项目、诱人的薪资福利待遇，你将与行业大牛切磋交流，更有机会到世界各地的分公司工作和体验。我们还在不断开拓智能硬件、无人驾驶、智能物流等新的业务。优秀的员工将会有transfer到美国的机会！
-    </div>
-    <div class="wrapper-title header-introduction">
-      <div>项目介绍</div>
-      <span></span>
-    </div>
-    <div class="introduction-video-one">
-        <div class="video-control">
-            <video src=" ../assets/video/Trucker Path _ Trucker App - truck parking, truck stops, weigh stations, diesel fuel.mp4" class="video"></video>
-            <img src="../assets/image/项目介绍视频遮罩.png" alt="" class="video-layer" [ngClass]="{hidden:hidden}">
-        </div>
-        <img src="../assets/image/项目介绍1.png" alt="">
-        <div class="video-wrapper" (click)="wrapper(1)">
-            <img src="../assets/image/视频播放按钮.png" alt="" class="play-button" [ngClass]="{hidden:hidden}" (click)="play(1,$event)">
-            <div class="paly-content" [ngClass]="{hidden:hidden}">Trucker Path已经成为北美最受欢迎的卡车司机应用，是北美最大的卡车社区。</div>
-        </div>
-    </div>
-    <div class="introduction-video-two">
-        <div class="video-control">
-            <video src="../assets/video/Free Load Board _ Find Truck Freight With Truckloads.mp4" class="video"></video>
-            <img src="../assets/image/项目介绍视频遮罩.png" alt="" class="video-layer" [ngClass]="{hidden:hiddenTwo}">
-        </div>
-        <img src="../assets/image/项目介绍2.png" alt="">
-        <div class="video-wrapper" (click)="wrapper(2)">
-            <img src="../assets/image/视频播放按钮.png" alt="" class="play-button" [ngClass]="{hidden:hiddenTwo}" (click)="play(2,$event)">
-            <div class="paly-content" [ngClass]="{hidden:hiddenTwo}">Truckloads是北美使用量最大的免费loadboard。</div>
-        </div>
-    </div>
-    <div class="wrapper-title header-jobs">
-      <div>招聘岗位</div>
-      <span></span>
-    </div>
-    <div class="content-bottom">
-      <div class="jobs">
-        <div class="jobs-product jobs-one">
-          <span class="jobs-background"></span>
-          <div class="jobs-manager">
-            <p class="jobs-station">产品经理</p>
-            <p class="jobs-type">Product
-              <br>Manager</p>
-          </div>
-        </div>
-        <div class="jobs-product jobs-two">
-          <div class="jobs-manager">
-            <p class="jobs-station">JAVA开发工程师</p>
-            <p class="jobs-type jobs-java-software">JAVA
-              <br/>Software
-              <br/>Developer</p>
-          </div>
-          <span class="jobs-background jobs-java"></span>
-        </div>
-        <div class="jobs-product jobs-three">
-          <span class="jobs-background jobs-research"></span>
-          <div class="jobs-manager">
-            <p class="jobs-station">算法开发工程师</p>
-            <p class="jobs-type">Research
-              <br/>Software
-              <br/>Developer</p>
-          </div>
-        </div>
-        <div class="jobs-product jobs-four">
-          <div class="jobs-manager">
-            <p class="jobs-station">前端开发工程师</p>
-            <p class="jobs-type">Web
-              <br/>Front-end
-              <br/>Developer</p>
-          </div>
-          <span class="jobs-background jobs-web"></span>
-        </div>
-        <div class="jobs-product jobs-five">
-          <span class="jobs-background"></span>
-          <div class="jobs-manager">
-            <p class="jobs-station">安卓开发工程师</p>
-            <p class="jobs-type jobs-java-software">Android
-              <br/>Software
-              <br/>Developer</p>
-          </div>
-        </div>
-        <div class="jobs-product jobs-six">
-          <div class="jobs-manager">
-            <p class="jobs-station">IOS开发工程师</p>
-            <p class="jobs-type">IOS
-              <br/>Software
-              <br/>Developer</p>
-          </div>
-          <span class="jobs-background jobs-ios"></span>
+    <img src="../assets/image/2.png" alt="" class="background-img-two">
+  </div>
+  <div class="wrapper-title header-jobs">
+    <div>招聘岗位</div>
+    <span></span>
+  </div>
+  <div class="content-bottom">
+    <div class="jobs">
+      <div class="jobs-product jobs-one">
+        <span class="jobs-background"></span>
+        <div class="jobs-manager">
+          <p class="jobs-station">产品经理</p>
+          <p class="jobs-type">Product
+            <br>Manager</p>
         </div>
       </div>
-      <div class="content-recruitment delivery">
-        <div class="recruitment-title">
-          <span class="title">投递方式</span>
-          <span class="title-background"></span>
+      <div class="jobs-product jobs-two">
+        <div class="jobs-manager">
+          <p class="jobs-station">JAVA开发工程师</p>
+          <p class="jobs-type jobs-java-software">JAVA
+            <br/>Software
+            <br/>Developer</p>
+        </div>
+        <span class="jobs-background jobs-java"></span>
+      </div>
+      <div class="jobs-product jobs-three">
+        <span class="jobs-background jobs-research"></span>
+        <div class="jobs-manager">
+          <p class="jobs-station">算法开发工程师</p>
+          <p class="jobs-type">Research
+            <br/>Software
+            <br/>Developer</p>
         </div>
       </div>
-      <div class="send-resume">
-        <div class="send-email">
-          发送简历至
-          <br/>
-          <input type="text" value="campus_job@truckerpath.com" readonly>
-          <img id="img" src="../assets/image/复制图标.png" (click)="copy()">
-          <br/>
-          <span class="span-format">格式：职位+姓名+学校</span>
+      <div class="jobs-product jobs-four">
+        <div class="jobs-manager">
+          <p class="jobs-station">前端开发工程师</p>
+          <p class="jobs-type">Web
+            <br/>Front-end
+            <br/>Developer</p>
         </div>
-        <div class="take-care">注意：每人只可投递一个岗位</div>
+        <span class="jobs-background jobs-web"></span>
       </div>
-      <div class="content-recruitment experience">
-        <div class="recruitment-title">
-          <span class="title experience-title">加入我们，是怎样的体验?</span>
-          <span class="title-background experience-background"></span>
+      <div class="jobs-product jobs-five">
+        <span class="jobs-background"></span>
+        <div class="jobs-manager">
+          <p class="jobs-station">安卓开发工程师</p>
+          <p class="jobs-type jobs-java-software">Android
+            <br/>Software
+            <br/>Developer</p>
         </div>
       </div>
-      <div class="treatment">
-        <p>超高颜值办公室</p>
-        <p>餐费，交通，高端医疗体验</p>
-        <p>丰富的团建活动，拓展</p>
-        <p>超多活动&逆天福利</p>
+      <div class="jobs-product jobs-six">
+        <div class="jobs-manager">
+          <p class="jobs-station">IOS开发工程师</p>
+          <p class="jobs-type">IOS
+            <br/>Software
+            <br/>Developer</p>
+        </div>
+        <span class="jobs-background jobs-ios"></span>
       </div>
-      <div class="imge">
-        <img src="../assets/image/照片.png">
+    </div>
+    <div class="content-recruitment delivery">
+      <div class="recruitment-title">
+        <span class="title">投递方式</span>
+        <span class="title-background"></span>
       </div>
+    </div>
+    <div class="send-resume">
+      <div class="send-email">
+        发送简历至
+        <br/>
+        <input type="text" value="campus_job@truckerpath.com" readonly>
+        <img id="img" src="../assets/image/复制图标.png" (click)="copy()">
+        <br/>
+        <span class="span-format">格式：职位+姓名+学校</span>
+      </div>
+      <div class="take-care">注意：每人只可投递一个岗位</div>
+    </div>
+    <div class="content-recruitment experience">
+      <div class="recruitment-title">
+        <span class="title experience-title">加入我们，是怎样的体验?</span>
+        <span class="title-background experience-background"></span>
+      </div>
+    </div>
+    <div class="treatment">
+      <p>超高颜值办公室</p>
+      <p>餐费，交通，高端医疗体验</p>
+      <p>丰富的团建活动，拓展</p>
+      <p>超多活动&逆天福利</p>
+    </div>
+    <div class="imge">
+      <img src="../assets/image/照片.png">
     </div>
   </div>
 </div>

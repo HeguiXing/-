@@ -4,44 +4,40 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{ 
+export class AppComponent implements OnInit{
+  controlOne = false;
+  controlTwo = false;
   videoOne: any;
   videoTwo: any;
   input: any;
-  hidden: boolean;
-  hiddenTwo: boolean;
   ngOnInit(){
     this.videoOne = document.getElementsByClassName('video')[0];
     this.videoTwo = document.getElementsByClassName('video')[1];
     this.input = document.getElementsByTagName('input')[0];
-    this.hidden = false;
-    this.hiddenTwo = false;
   }
   play(num,e){
     e.stopPropagation();
     if(num === 1){
       if(!this.videoTwo.paused){
-        this.videoTwo.pause();
-        this.hiddenTwo = false;
+        this.pause(2);
       }
       this.videoOne.play();
-      this.hidden = true;
+      this.controlOne = true;
     }else{
       if(!this.videoOne.paused){
-        this.videoOne.pause();
-        this.hidden = false;
+        this.pause(1);
       }
       this.videoTwo.play();
-      this.hiddenTwo = true;
+      this.controlTwo = true;
     }  
   }
-  wrapper(num){
-    if(num === 1){
+  pause(num) {
+    if (num === 1) {
       this.videoOne.pause();
-      this.hidden = false;
-    }else{
+      this.controlOne = false;
+    } else {
       this.videoTwo.pause();
-      this.hiddenTwo = false;
+      this.controlTwo = false;
     }
   }
   copy(){
